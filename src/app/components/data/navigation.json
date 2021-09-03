@@ -1,17 +1,5 @@
 [
     {
-        "id": 1,
-        "linkText": "Home",
-        "child": true,
-        "submenu": [
-            {
-                "id": 1.2,
-                "link": "/home-v2",
-                "linkText": "Home v2"
-            }
-        ]
-    },
-    {
         "id": 2,
         "linkText": "Blog",
         "child": true,
