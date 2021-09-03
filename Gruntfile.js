@@ -10,14 +10,10 @@
 
 module.exports = function (grunt) {
 
-  grunt.loadNpmTasks('grunt-build-control');
   var pkg = require('./package.json');
 
   // Define the configuration for all the tasks
   grunt.initConfig({
-
-    // Project settings
-    config: config,
 
     buildcontrol: {
       options: {
@@ -39,5 +35,10 @@ module.exports = function (grunt) {
         }
       }
     }
-  })
+  });
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
+  // Default task(s).
+  grunt.registerTask('default', ['uglify']);
 }
